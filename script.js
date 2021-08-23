@@ -12,34 +12,34 @@ const randomQuestionResult = document.querySelector('.random-question-result');
 const { funQuestions, friendlyQuestions, guyQuestions, girlQuestions } =
   questions;
 let random;
-const displayFunQuestions = function (category) {
+const displayQuestions = function (category) {
   random = Math.floor(Math.random() * category.length);
 };
 
 btnFun.addEventListener('click', function (e) {
   mainPage.style.display = 'none';
-  displayFunQuestions(funQuestions);
+  displayQuestions(funQuestions);
 
   randomQuestionResult.textContent = funQuestions[random];
 });
 
 btnFriendly.addEventListener('click', function (e) {
   mainPage.style.display = 'none';
-  displayFunQuestions(friendlyQuestions);
+  displayQuestions(friendlyQuestions);
 
   randomQuestionResult.textContent = friendlyQuestions[random];
 });
 
 btnGuy.addEventListener('click', function (e) {
   mainPage.style.display = 'none';
-  displayFunQuestions(guyQuestions);
+  displayQuestions(guyQuestions);
 
   randomQuestionResult.textContent = guyQuestions[random];
 });
 
 btnGirl.addEventListener('click', function (e) {
   mainPage.style.display = 'none';
-  displayFunQuestions(girlQuestions);
+  displayQuestions(girlQuestions);
 
   randomQuestionResult.textContent = girlQuestions[random];
 });

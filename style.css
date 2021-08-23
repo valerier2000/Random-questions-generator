@@ -1,18 +1,19 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: inherit;
 }
 
 body {
   background-color: #4c4556;
   font-family: 'Josefin Sans', sans-serif;
-  padding: 10vh 10vw;
+  /* padding: 10vh 10vw; */
   align-items: center;
+  height: 100vh;
 }
 
 .main {
   background-color: #4c4556;
-  /* opacity: 0; */
 }
 
 .text-blocks {
@@ -109,14 +110,13 @@ button {
   }
 }
 
-.app {
-  display: flex;
-  justify-content: center;
-  padding: 3vh 0;
+.random-question-result {
+  text-align: center;
+  padding: 20vh 0;
 }
 
-.random-question-result {
-  color: #f6c026;
-  font-size: 3.5rem;
-  text-align: center;
+.result-buttons {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
 }
