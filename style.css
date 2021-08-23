@@ -10,6 +10,11 @@ body {
   align-items: center;
 }
 
+.main {
+  background-color: #4c4556;
+  opacity: 0;
+}
+
 .text-blocks {
   display: flex;
   justify-content: center;
