@@ -1,1 +1,1 @@
-'use strict';
+import * as Questions from './questions.js';
