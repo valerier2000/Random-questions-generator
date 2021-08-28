@@ -4,6 +4,8 @@ const btnFun = document.querySelector('#fun-btn');
 const btnFriendly = document.querySelector('#friendly-btn');
 const btnGuy = document.querySelector('#guy-btn');
 const btnGirl = document.querySelector('#girl-btn');
+const btnBack = document.querySelector('.back-button');
+const btnNext = document.querySelector('.next-button');
 
 const mainPage = document.querySelector('.main');
 const containerApp = document.querySelector('.app');
@@ -42,4 +44,14 @@ btnGirl.addEventListener('click', function (e) {
   displayQuestions(girlQuestions);
 
   randomQuestionResult.textContent = girlQuestions[random];
+});
+
+btnBack.addEventListener('click', function (e) {
+  containerApp.style.display = 'none';
+  mainPage.style.display = 'block';
+});
+
+btnNext.addEventListener('click', function (e) {
+  displayQuestions(funQuestions);
+  randomQuestionResult.textContent = funQuestions[random];
 });
